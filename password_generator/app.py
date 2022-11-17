@@ -48,22 +48,27 @@ class App(customtkinter.CTk, PasswordsGenerator):
         self.spin.place(relx=0.6, rely=0.12, relwidth=0.2)
 
         # ------------ RADIO BUTTON ------------------------------------------------------------
+        def another_password():
+            self.button_gen_password.configure(command=self.generate_password, fg_color=None, text="Gerar Senha")
+            if self.radio_var.get() == 3 and int(self.spin.get()) <= 29:
+                spin_var.set(30)
+
         self.radio_var = tkinter.IntVar(value=0)
 
         self.strong_password = customtkinter.CTkRadioButton(master=self.frame_1, text="alfanum + símbolos",
                                                             variable=self.radio_var, value=1,
-                                                            width=15, height=15)
+                                                            width=15, height=15, command=another_password)
 
         self.strong_password.place(relx=0.02, rely=0.12)
 
         self.medium_password = customtkinter.CTkRadioButton(master=self.frame_1, text="alfanúmerico",
                                                             variable=self.radio_var, value=2,
-                                                            width=15, height=15)
+                                                            width=15, height=15, command=another_password)
         self.medium_password.place(relx=0.02, rely=0.388)
 
         self.low_password = customtkinter.CTkRadioButton(master=self.frame_1, text="letras (Aa)",
                                                          variable=self.radio_var, value=3,
-                                                         width=15, height=15)
+                                                         width=15, height=15, command=another_password)
         self.low_password.place(relx=0.02, rely=0.67)
 
         # #------------ WIDGETS FRAME 2 --------------------------------------------------------#
