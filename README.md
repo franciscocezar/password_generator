@@ -7,12 +7,12 @@
 ![Captura de Tela 2022-11-21 às 22 02 29](https://user-images.githubusercontent.com/102926017/203189187-deb74a1b-a7a6-45f4-88f6-272fc7c66bf0.png)          ![Captura de Tela 2022-11-21 às 22 04 33](https://user-images.githubusercontent.com/102926017/203189340-4d471506-9176-4c58-997e-5963815af60f.png)
 ##
 
-## Gerador de senhas com três opções de caracteres: 
-  - alfabético (maiúsculo e minúsculo), 
-  - alfanumérico e 
-  - alfanumérico com símbolos
+## Password generator with three character options: 
+  - alphabetic (upper and lower case); 
+  - alphanumeric; 
+  - alphanumeric with symbols.
 
-## Tecnologias Usadas
+## Used technologies:
 
 * [Python](https://www.python.org/)
 * [Tkinter](https://docs.python.org/3/library/tkinter.html)
